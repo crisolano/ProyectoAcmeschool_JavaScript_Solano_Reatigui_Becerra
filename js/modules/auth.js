@@ -12,6 +12,8 @@ import {
   isLoggedIn,
 } from '../utils/storage.js';
 
+export { isLoggedIn };
+
 // ── Login ────────────────────────────────────
 // Recibe email y password, verifica credenciales.
 // Devuelve { ok: true, user } o { ok: false, error }

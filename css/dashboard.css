@@ -43,6 +43,7 @@
 .nav-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   flex: 1;
 }
@@ -234,6 +235,7 @@
   max-width: 540px;
   max-height: 90vh;
   overflow-y: auto;
+  overflow-x: hidden;
   animation: slideUp 0.25s ease;
 }
 

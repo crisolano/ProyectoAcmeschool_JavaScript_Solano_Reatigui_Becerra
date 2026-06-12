@@ -68,6 +68,7 @@ export function openCreateModal() {
   document.getElementById('modalTitle').textContent = 'Nuevo usuario';
   document.getElementById('btnGuardar').textContent  = 'Guardar usuario';
   document.getElementById('formUsuario').reset();
+  document.getElementById('userPassword').value = '';
   clearFieldErrors();
 
   // La contraseña es obligatoria al crear
