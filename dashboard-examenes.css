@@ -20,16 +20,11 @@
     "main"
     ;
 
-    grid-template-rows: 80px auto;
+    grid-template-rows: 110px auto;
     min-width: 100vw; 
     min-height: 100vh;
 }
 
-
-.header{
-    grid-area: header;
-
-}
 
 .header_container{
     display: grid;
@@ -75,11 +70,10 @@
 
 .navbar_menu{
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
 }
-
 
 
 .navbar_link_resolve {
@@ -116,7 +110,6 @@
 }
 
 
-
 .main {
     grid-area: main;
     background-color: var(--fondo);
@@ -147,7 +140,7 @@
 .banner_tag {
     font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.08rem;
     color: var(--white);
     margin-bottom: 0.6rem;
 }
@@ -216,7 +209,7 @@
 
 .card_examen_info {
     display: flex;
-    gap: 0.8rem;
+    gap: 2rem;
 }
 
 .card_examen_detalle {
@@ -238,3 +231,249 @@
 .btn-presentar:hover {
     background-color: var(--color);
 }
+
+@media (min-width: 768px){
+
+    .logo{
+        padding: 1rem;
+        border: 1px solid ;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    .header_school-name{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .header_platform-type{
+        font-size: 0.8rem;
+    }
+
+    .navbar_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:1rem;
+    }
+
+    .navbar_link_resolve {
+        padding: 0.4rem 1rem;
+        border-radius: 6px;
+        font-size: 1rem;
+        width: fit-content; 
+    }
+
+
+    .navbar_link_login{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .acces{
+        font-size: 1rem;
+    }
+
+    .banner {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 16rem;
+    }
+
+    .banner_tag {
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.08rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .banner_title {
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin: 0.5rem 0 0.5rem 0;
+        line-height: 1.2;
+    }
+
+    .banner_subtitle {
+        font-size: 1rem;
+    
+    }
+
+    .card_examen_codigo {
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+    }
+
+    .card_examen_title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .card_examen_description {
+        font-size:1.3rem;
+    }
+
+    .card_examen_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 0.6rem;
+}
+
+    .card_examen_info {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .card_examen_detalle {
+        font-size: 0.7rem;
+        color: var(--gris);
+    }
+
+    .catalogo_grid {
+        height: 15rem;
+    }
+
+    .card_exam {
+        gap: 2.2rem;
+    }
+
+    .card_examen_title {
+        font-size: 1.6rem;
+
+    }
+
+    .card_examen_description {
+
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .card_examen_detalle {
+        font-size: 0.9rem;
+        color: var(--gris);
+    }
+
+    .btn-presentar{
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+
+    .logo{
+        font-size: 1.4rem;
+    }
+
+    .header_school-name{
+        font-size: 1.5rem;
+    }
+
+    .header_platform-type{
+        font-size: 1.1rem;
+    }
+
+    .navbar_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .navbar_link_resolve {
+
+        font-size: 1.2rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .navbar_link_login{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .acces{
+        font-size: 1.2rem;
+    }
+
+
+    .banner_tag {
+        font-size: 1rem;
+    }
+
+    .banner_title {
+        font-size: 1.9rem;
+    }
+
+    .banner_subtitle {
+        font-size: 1.2rem;
+    }
+
+    .card_examen_codigo {
+        font-size: 0.9rem;
+    }
+
+    .card_examen_title {
+        font-size: 2rem;
+    }
+
+    .card_examen_description {
+        font-size: 1rem;
+    }
+
+    .card_examen_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 0.6rem;
+        border-top: 1px solid var(--gris);
+        }
+
+    .card_examen_info {
+        display: flex;
+        gap: 0.8rem;
+    }
+
+    .card_examen_detalle {
+        font-size: 1.1rem;
+    }
+
+    .catalogo_grid {
+        display: grid;
+        gap: 1.2rem;
+    }
+
+    .card_exam {
+        gap: 2.2rem;
+    }
+
+    .card_examen_title {
+        font-size: 1.6rem;
+
+    }
+
+    .card_examen_description {
+        font-size: 1.1rem;
+
+    }
+
+
+
+
+}
+
